@@ -1,10 +1,66 @@
+/* css is a set of rules which target certain tags or #ids or classes, etc. */
+/* classes can be used multiple times per page, tags only to be used once per page --unique
+ * SELECTOR: {DECLARATION} 
+ * #id p {declaration}  -> all paragraph tags with id 'id' styled this way
+ * .class div {declaration} -> all div tags in 'class' classes styled this way 
+ * DECLARATION = 
+ *  property_name: value_name; -> elements in declaration
+*/
+
+/* CSS WORKS FROM TOP TO BOTTOM, overrides 
+ * HOWEVER, specificity ovverides cascades:
+ * id = 100 pts
+ * class = 10 pts
+ * element = 1 pt 
+ */
+
+
+
+/* header 1 */
 h1{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
     color: red;
+    font-size: 33px;
     text-decoration: underlined;
     text-transform: uppercase;
 }
 
+#header h1{
+    color: red;
+    font-size: 64px;
+}
 
+#my_only_span{
+    color: springgreen;
+}
+
+/* p tags */
+p{
+    font-size: 18px;
+    color: blue;
+}
+
+/* default browser styles override inheritance */
+/* a{
+    text-decoration: underline;
+    color: orange;
+} */
+
+span{
+    text-transform: uppercase;
+}
+
+div{
+    width: 100%;
+    /* color: red; */
+    background-color: slategrey;
+}
+
+.my_class{
+    color: tomato;
+}
 
 /* body {
     margin: 60px auto;
