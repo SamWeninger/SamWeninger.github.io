@@ -1,0 +1,45 @@
+/* css is a set of rules which target certain tags or #ids or classes, etc. */
+/* classes can be used multiple times per page, tags only to be used once per page --unique
+ * SELECTOR: {DECLARATION} 
+ * #id p {declaration}  -> all paragraph tags with id 'id' styled this way
+ * .class div {declaration} -> all div tags in 'class' classes styled this way 
+ * DECLARATION = 
+ *  property_name: value_name; -> elements in declaration
+*/
+
+/* CSS WORKS FROM TOP TO BOTTOM, overrides 
+ * HOWEVER, specificity ovverides cascades:
+ * id = 100 pts
+ * class = 10 pts
+ * element = 1 pt 
+ */
+
+ /* IMPORTANT RULE: trumps all other rules
+  * !important
+  * property_name: value_name !important;
+  */
+
+/*
+ * DESCENDANTS:
+ * #parent #child <tag>{...}
+ * targets id 'child' within id 'parent'
+ * child and parent ids refer to embedded div tags?
+ * #parent > <tag>{...}
+ * > == child-combinator / 'direct' --> only tags directly under parent targeted, no children tags targeted
+*/
+
+/*
+ * ADJACENTS:
+ * #id h1 + p {...}
+ * targets p tags immediately following h1 tags in 'id'
+ */
+
+/*
+ * ATTRIBUTE SELECTOR:
+ * <tag>[<attribute>]
+ * <tag>[<attribute> = 'value'] eg. h1[title = "my title"]
+ *                 '~=' -> includes pattern matches with spaces after etc.,
+ *                 '$=' -> includes pattern matches that END in the same way
+ *                 '^=' -> includes pattern matches that BEGINS same way
+ * targets all tags ('tag') with an 'attribute' associated with it
+ */
