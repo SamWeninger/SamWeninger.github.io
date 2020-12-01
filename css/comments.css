@@ -88,4 +88,30 @@
   * TEXT-DECORATION
   * inherit (useful to override default browser styles), 
   * line-through, overline, underline, etc.
+  *
+  * FONT-WEIGHT
+  * lighter, normal, bolder, ###, etc.
+  *
+  * TEXT-TRANSFORM
+  * capitalize, uppercase, lowercase, etc.  
+  *
+  * COLOR
+  * color: -> foreground (text)
+  *    <name>, #XXXXXX
+  * background-color: (background/highlight)
+  * background: url(); <- add background image
+  *
+  * letter-spacing:
+  * px, em, %  
+  * em -> inherits font-size as param
+  *
+  * word-spacing:
+  * px, em, %
+  * em -> inherits font-size as param
+  *
+  * line-height:  -> height of line + space
+  * px, em, % 
+  * em -> inherits font-size as param, should be > 1
+  *
+  * margin-bottom: -> spacing at bottom of paragraph
   */
