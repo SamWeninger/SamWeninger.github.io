@@ -43,3 +43,49 @@
  *                 '^=' -> includes pattern matches that BEGINS same way
  * targets all tags ('tag') with an 'attribute' associated with it
  */
+
+/*
+ * PSEUDO-CLASS:
+ * Behavioral and structural extensions
+ * <class/tag> : <property>{...}
+ * selector:keyword {declaration}
+ * applies 'property' to tag/class
+ *
+ * EG. (common)
+ * 'hover', 'active', 'visited'
+ *
+ * :first-child, :last-child
+ * targets first and last, respectively, elements in group
+ * e.g. div a:first-child {} -> targets first ELEMENT in div 
+ * :nth-child(n) -> targets nth element
+ * :nth-child(even/odd/<formula, eg. 2n+1>)
+ * 
+ * :first-of-type, :last-of-type
+ * targets first and last elements of type selected
+ * :nth-of-type(n) -> targets nth element
+ * :nth-of-type(even/odd/<formula, eg. 2n+1>)
+ */
+
+/* COMBINING SELECTORS
+* e.g. <tag>.<class> {...}
+*/
+
+/* UNIVERSAL SELECTOR
+ * " * {...} "
+ * TARGETS every element in page, not inheritance
+ */
+
+ /* FONT-SIZE
+  * absolute: pixels (px)
+  * relative: 
+  *    em -> takes base font-size, multiplies by #em
+  *    n% -> % of base font-size
+  *
+  * FONT-FAMILY
+  * font-family: [font-stack]
+  * list of fonts, used in order (if font 1 not installed, font 2 applied, etc.)
+  *
+  * TEXT-DECORATION
+  * inherit (useful to override default browser styles), 
+  * line-through, overline, underline, etc.
+  */
