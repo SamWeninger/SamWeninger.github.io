@@ -65,7 +65,15 @@ a:active{
     color: purple;
 } */
 
-
+.box{
+    margin: 30px auto;
+    border: 2px dashed cadetblue;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
 
 
 

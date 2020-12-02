@@ -115,3 +115,34 @@
   *
   * margin-bottom: -> spacing at bottom of paragraph
   */
+
+  /* BOX MODEL
+   * margin        -> orange
+   *   - vertical margins collapse (the higher of two margins wins/ becomes margin between 2 elems)
+   *   - margins: top right bottom left (specifiy margins clockwise from top, 4 values)
+   *   - margins: top/bottom right/left (2 values)
+   *   - margins: top left/right bottom (3 values)
+   *   - "auto" -> keyword for automatic margins to center box between others/boundaries
+   *   - responsive design, i.e. shifting weppage dimensions, use % or auto for margins/width/padding
+   * 
+   * border        -> 
+   *    - width, style, color
+   *    eg.
+   *       border-top-(width/style/color): 
+   *       border-top: <width> <style> <color>
+   *       border: ... ;
+   *
+   * padding       -> green
+   *   - same margin rules apply to padding
+   *   - (padding/margin)-(top/bottom/left/right) = ... ; -> specify specific side
+   * width/height  -> blue
+   *
+   *
+   *
+   *
+   *
+   *
+  
+  
+  
+  */
