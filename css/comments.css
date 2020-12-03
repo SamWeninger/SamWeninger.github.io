@@ -133,16 +133,226 @@
    *       border: ... ;
    *
    * padding       -> green
-   *   - same margin rules apply to padding
+   *   - same margin rules apply to padding, exc. 'auto'
    *   - (padding/margin)-(top/bottom/left/right) = ... ; -> specify specific side
+   *
    * width/height  -> blue
+   *   - px
+   *   - % -> percentage w/h of parent element, good for shifting screen size
    *
+   * IN-LINE elements -> have no vertical spacing
+   *   - workaround => 
+   *        display: block
+   *        display: inline-block (merge inline and block properties together)
    *
+   * ROUNDED CORNERS:
+   *   -> border-radius: #px
+   *           top-left top-right bottom-right bottom-left
    *
+   *   -> perfect circle: border-radius: 50% of width/height
+   *   -> higher the value, rounder the curve
    *
+   * COLOR:
+   *   -> #000000
+   *       R G B
+   *   -> rgb(0-255, 0-255, 0-255, <alpha channel opacity (optional param)>)
    *
+   * OPACITY:
+   *   -> opacity: <0(transparent) - 1(opaque)>
+   */
+
+  /* Browser specs:
+   * caniuse.com -> browser compatibility
    *
-  
-  
-  
-  */
+   * pleeease.io/play -> converts base css to css for full browser compatibility
+   */
+
+
+
+
+/***************************************/
+
+
+
+
+
+   /* OLD MAIN.CSS */
+
+   /* header 1 */
+h1{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    color: red !important;
+    font-size: 33px;
+    text-decoration: underlined;
+    text-transform: uppercase;
+}
+
+#header h1{
+    color: yellow;
+    font-size: 64px;
+}
+
+#my_only_span{
+    color: springgreen;
+}
+
+/* p tags */
+p{
+    font-size: 18px;
+    color: blue;
+}
+
+#written_content > p{
+    color: yellowgreen;
+    font-size: 24px;
+}
+
+/* default browser styles override inheritance */
+/* a{
+    text-decoration: underline;
+    color: orange;
+} */
+
+span{
+    text-transform: uppercase;
+}
+
+span[class~="my_class"]{
+    color: teal;
+}
+
+span{
+    width: 100%;
+    /* color: red; */
+    background-color: slategrey;
+}
+
+.my_class{
+    color: tomato;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: orange;
+}
+
+/* a:visited{
+    color: purple;
+} */
+
+.box{
+    margin: 30px auto;
+    border: 2px solid red;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 10px;
+    /* Background-image: url("../img/Flowers.jpg"), url("../img/Baseball.jpg"); */
+    background: #aadddd;
+    background: -moz-linear-gradient(top, #aadddd 0%, #40d8d8 100%); /*mozilla/firefox*/
+    background: -webkit-linear-gradient(top, #aadddd 0%, #40d8d8 100%); /*chrome*/
+    background: linear-gradient(top, #aadddd 0%, #40d8d8 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    box-shadow: 2px 2px 4px 2px rgb(40,40,40,0.6);
+    /*          right bottom blurr-radius(low = not blurry) spread(low = spread over low distance) < shadow color>  */
+    /* background-image: url(); 
+    background-repeat: round/no-repeat;
+    background-position: center/ right% top% etc.;
+    background-size: px, etc.;
+           -or-
+    background-image: url() no-repeat top center;  -> add specs in line
+    ADD 'background-color' AFTER 'background-image'
+    */
+}
+
+.box:hover{
+    margin: 30px auto;
+    border: 2px solid red;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 10px;
+    /* Background-image: url("../img/Flowers.jpg"), url("../img/Baseball.jpg"); */
+    background: #aadddd;
+    
+    /*vendor prefixes: -moz-... etc.*/
+    background: -moz-linear-gradient(bottom, #aadddd 0%, #40d8d8 100%); /*mozilla/firefox*/
+    background: -webkit-linear-gradient(bottom, #aadddd 0%, #40d8d8 100%); /*chrome*/
+    background: linear-gradient(bottom, #aadddd 0%, #40d8d8 100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    box-shadow: 0px 0px 0px 0px rgb(40,40,40,0.6);
+    /* background-image: url(); 
+    background-repeat: round/no-repeat;
+    background-position: center/ right% top% etc.;
+    background-size: px, etc.;
+           -or-
+    background-image: url() no-repeat top center;  -> add specs in line
+    ADD 'background-color' AFTER 'background-image'
+    */
+}
+
+
+
+
+
+
+
+
+/* body {
+    margin: 60px auto;
+    width: 70%;
+}
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+} */

@@ -1,129 +1,52 @@
-/* header 1 */
-h1{
-    /* position: absolute;
-    top: 0;
-    left: 0; */
-    color: red !important;
-    font-size: 33px;
-    text-decoration: underlined;
-    text-transform: uppercase;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #b1c3ff;
 }
 
-#header h1{
-    color: yellow;
-    font-size: 64px;
+#wrapper{
+    width: 90%;
+    margin: 0 auto;
+    background: #ffffff;
 }
 
-#my_only_span{
-    color: springgreen;
+#navigation{
+    background: slategray;
+    padding: 10px;
 }
 
-/* p tags */
-p{
-    font-size: 18px;
-    color: blue;
-}
-
-#written_content > p{
-    color: yellowgreen;
-    font-size: 24px;
-}
-
-/* default browser styles override inheritance */
-/* a{
-    text-decoration: underline;
-    color: orange;
-} */
-
-span{
-    text-transform: uppercase;
-}
-
-span[class~="my_class"]{
-    color: teal;
-}
-
-div, span{
-    width: 100%;
-    /* color: red; */
-    background-color: slategrey;
-}
-
-.my_class{
-    color: tomato;
-}
-
-a:hover{
-    color: red;
-}
-
-a:active{
-    color: orange;
-}
-
-/* a:visited{
-    color: purple;
-} */
-
-.box{
-    margin: 30px auto;
-    border: 2px dashed cadetblue;
-    padding: 5px 0px;
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-}
-
-
-
-
-
-
-
-
-
-
-/* body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+#navigation ul{
+    text-align: left;
+    list-style-type: none;
+    margin-left: 10px;
     padding: 0px;
-    list-style: none;
-    font-weight: bold;
 }
-nav ul li, footer ul li {
-    display: inline;
+
+#navigation li{
+    display: inline-block;
     margin-right: 20px;
 }
-a {
+
+#navigation a{
+    display: inline-block;
+    color: #ffffff;
     text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 6px;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+#navigation a:hover{
+    display: inline-block;
+    background: #ffffff;
+    color: slategray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 6px;
 }
 
-ul.posts li {
-    list-style: none;
-} */
+#lead-banner img{
+    width: 100%;
+    height: auto;
+}
