@@ -108,3 +108,34 @@ body{
     margin-left: 2%;
     /* float: left; */
 }
+
+/* SKILLS */
+.skills_wrapper{
+    display: flex;
+    width: 80%;
+    margin: 1% auto;
+    line-height: 1.75;
+}
+
+.skills.software{
+    width: 33%;
+}
+
+.skills.frameworks{
+    width: 33%;
+
+}
+
+.skills.technical{
+    width: 33%;
+
+}
+
+.skills ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills li:hover{
+    background-color: lightblue;
+}
