@@ -5,7 +5,7 @@ body{
 }
 
 #wrapper{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     background: #ffffff;
 }
@@ -49,4 +49,62 @@ body{
 #lead-banner img{
     width: 100%;
     height: auto;
+}
+
+/* EXPERIENCES */
+.pos_img.huawei > img {
+    width: 60%;
+    max-width: 200px;
+    height: auto;
+}
+
+.pos_img.bloorview > img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.experience.huawei{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.experience.bloorview{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.flex_img{
+    width: 20%;
+    margin-right: 2%;
+    margin-left: 2%;
+    height: same-as-width;
+
+}
+
+.pos_img{
+    display: inline-block;
+    /* background: lightgray; */
+    border-radius: 15px;
+    /* border: 1px solid red; */
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    /* position: relative; */
+    /* object-fit: fill; */
+    /* float: inline-start; */
+    /* float: left; */
+}
+
+
+.pos_text{
+    display: inline-block;
+    background: lightgray;
+    border-radius: 15px;
+    /* margin: 1%; */
+    padding-left: 10px;
+    width: 75%;
+    margin-right: 2%;
+    margin-left: 2%;
+    /* float: left; */
 }
