@@ -139,3 +139,50 @@ body{
 .skills li:hover{
     background-color: lightblue;
 }
+
+
+
+/* EDUCATION */
+.edu_flex{
+    display: flex;
+    margin: 2%;
+
+}
+
+.edu_description{
+    width: 30%;
+    margin-right: 2%;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.special_courses{
+    display: block;
+    width: 60%;
+    /* margin: 10px; */
+    padding: 10px;
+    border: 1px solid red;
+
+}
+
+.special_courses > ul{
+    display: flex;
+    list-style-type: none;
+    line-height: 1.75;
+    padding-left: 0;
+}
+
+.special_courses > ul div:first-of-type{
+    margin-right: 10%;
+    width: 45%;
+}
+
+.special_courses > ul div:last-of-type{
+    /* margin-right: 10%; */
+    width: 45%;
+}
+
+.special_courses li:hover{
+    background-color: lightblue;
+}
+
