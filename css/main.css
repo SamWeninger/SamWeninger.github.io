@@ -1,7 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: #b1c3ff;
+    background: #cdd7f8;
 }
 
 #wrapper{
@@ -51,6 +51,11 @@ body{
     height: auto;
 }
 
+h1{
+    margin: 2% 2%; /* T/B L/R */
+    font-size: 48px;
+}
+
 /* EXPERIENCES */
 .experience.huawei{
     /* display: flex; */
@@ -82,7 +87,7 @@ body{
 }
 
 .pos_img.bloorview > img {
-    width: 90%;
+    width: 80%;
     max-width: 200px;
     height: auto;
     /* border-radius: 15px; */
@@ -148,7 +153,9 @@ body{
 
 
 
-/* EDUCATION */
+
+/******* EDUCATION *******/
+
 .edu_flex{
     display: flex;
     margin: 2%;
@@ -156,7 +163,7 @@ body{
 }
 
 .edu_description{
-    width: 30%;
+    width: 25%;
     margin-right: 2%;
     padding: 10px;
     border: 1px solid red;
@@ -164,7 +171,7 @@ body{
 
 .special_courses{
     display: block;
-    width: 60%;
+    width: 75%;
     /* margin: 10px; */
     padding: 10px;
     border: 1px solid red;
@@ -176,19 +183,28 @@ body{
     list-style-type: none;
     line-height: 1.75;
     padding-left: 0;
+    margin: auto;
 }
 
 .special_courses > ul div:first-of-type{
-    margin-right: 10%;
+    margin-right: 8%;
     width: 45%;
 }
 
 .special_courses > ul div:last-of-type{
-    /* margin-right: 10%; */
+    margin-right: 0;
     width: 45%;
 }
 
 .special_courses li:hover{
     background-color: lightblue;
+}
+
+.course{
+    display: inline-block;
+}
+
+.grade{
+    float: right;
 }
 
